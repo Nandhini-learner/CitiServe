@@ -3,6 +3,7 @@ import { useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
+import Chatbot from './components/Chatbot';
 
 // Pages
 import Dashboard from './pages/Dashboard';
@@ -100,6 +101,7 @@ function App() {
       </div>
       
       {!isAuthPage && <Footer />}
+      {!isAuthPage && <Chatbot />}
     </div>
   );
 }
